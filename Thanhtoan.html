@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--hỗ trợ tiếng việt-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Hỗ trợ trên các thiết bị khác nhau-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS của bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Css cảu bản thân luôn nằm dưới Css bootstrap-->
+    <link rel="stylesheet" href="css/DoAnQT.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript của bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Script cua fontawsome-->
+    <script src="https://kit.fontawesome.com/255d6ba077.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-dark justify-content-center">
+        <div class="container">
+          <a class="navbar-brand" href="DoAn.html"><img src="img/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto mx-auto">
+              <li class="nav-item">
+                <a class="nav-b" href="DoAn.html">Trang chủ</a>
+              </li>
+              <div class="dropdown">
+                <a class="nav-b dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Sản Phẩm</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="SanPham.html">Sản Phẩm</a></li>
+                      <li><a class="dropdown-item" href="pk.html">Phụ kiện</a></li>
+                    </ul>
+            </div>
+            <div class="dropdown">
+              <a class="nav-b dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Tin tức</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="tintuc2.html">Trải nghiệm</a></li>
+                    <li><a class="dropdown-item" href="news2.html">Tin tức nổi bật</a></li>
+                    <li><a class="dropdown-item" href="trainghiem.html">Sự kiện liên quan</a></li>
+                  </ul>
+          </div>
+              <li class="nav-item">
+                  <a class="nav-b" href="Gioithieu2.html">Giới thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-b" href="javascript:void(0)">Liên hệ</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <div class="dropdown">
+                <button type="button" class="btn btn-outline-dark dropdown-toggle"  data-bs-toggle="dropdown">
+                  <i class="fa-solid fa-magnifying-glass" style="font-size: 15px; padding-top: 8px;"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Search here">
+                    
+                  </form>
+                </ul>
+              </div>
+            </form>
+            <ul class="navbar-nav">
+                <li class="nav-link"><a href="Hoso.html"><i class="fa-solid fa-user"></i></a></li>
+                <li class="nav-link"><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+                <li class="nav-link"><a href="Giohang.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+
+
+    <section id="info">
+        <div class="container">
+            <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="DoAn.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa-solid fa-angle-right"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Giohang.html">Giỏ hàng</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-angle-right"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Thanhtoan.html">Thanh toán</a>
+                  </li>
+              </ul>
+        </div>
+    </section>
+
+    <section id="thanhtoan">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="f-20 p-40" style="margin-left: 3px;">Địa chỉ giao hàng</p>
+                    <div class="row borde-all" style="margin-left: 3px;">
+                      <div class="col-6" style="padding-bottom: 20px;">
+                        <p class="f-18  mg-20" style="padding-left: 22px;">Lolita <span style="border-left: 2px solid #D0B27A; padding-left: 10px;">(+84)123456789</span></p>
+                        <p class="f-14 text-muted" style="padding-left: 22px; padding-top: 10px;">Hoài Đức, Hà Nội</p>
+                      </div>
+                      <div class="col-6" style="padding-bottom: 20px;">
+                        <p class="f-14 mg-20 text-end" style="padding-right: 22px;"><a href="#">Thay đổi</a></p>
+                        <button type="button" class="btn btn-primary float-r" data-bs-toggle="modal" data-bs-target="#myModal">
+                          Mặc định
+                        </button>
+                        
+                        <!-- The Modal -->
+                        <div class="modal" id="myModal">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                        
+                              <!-- Modal Header -->
+                              <div class="modal-header">
+                                <h4 class="modal-title">Địa chỉ mới</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                              </div>
+                        
+                              <!-- Modal body -->
+                              <div class="modal-body">
+                                <label for="country">Quốc Gia/Khu vực</label>
+                                <select id="country" name="country">
+                                  <option value="australia">Việt Nam</option>
+                                  <option value="canada">Nhật Bản</option>
+                                  <option value="usa">USA</option>
+                                </select>
+                                <div class="row" style="padding: 0;">
+                                  <div class="col-6" style="padding-left: 10px; padding-top: 0; padding-bottom: 10px;">
+                                    <label for="fname"></label>
+                                      <input type="text" id="fname" name="firstname" placeholder="Họ và tên">
+                                  </div>
+                                  <div class="col-6" style="padding-right: 10px; padding-top: 0; padding-bottom: 10px;">
+                                    <label for="fname"></label>
+                                      <input type="text" id="fname" name="firstname" placeholder="Số điện thoại">
+                                  </div>
+                                  <label for="fname"></label>
+                                  <input type="text" id="fname" name="firstname" placeholder="Tỉnh/Thành phố, Quận/Huyện, Phường/Xã" style="width: 460px; margin-left: 10px; margin-top: 14px;">
+                                  <label for="fname"></label>
+                                  <input type="text" id="fname" name="firstname" placeholder="Địa chỉ cụ thể" style="width: 460px; margin-left: 10px; margin-top: 24px; height: 66px;">
+                                  <p class="f-14 text-start p-20"><a href="#">Đặt làm mặc định</a></p>
+                                </div>
+                              </div>
+                        
+                              <!-- Modal footer -->
+                              <div class="modal-footer">
+                                <p class="f-16 float-r"><a href="Thanhtoan.html">Quay lại</a></p>
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><a href="#">Hoàn thành</a></button>
+                              </div>
+                        
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   <div id="phuongthucthanhtoan" class="p-60">
+                      <p class="f-20">Phương thức thanh toán</p>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <ul class="mg-20">
+                            <button type="button" class="btn btn-outline-secondary float-l"><a href="#">Thanh toán khi nhận hàng</a></button>
+                            <button type="button" class="btn btn-outline-secondary float-l"><a href="#">Thanh toán nhanh</a></button>
+                          </ul>
+                        </div>
+                        
+                      </div>
+                      <div class="col-md-12">
+                      <div class="borde-all mg-20" style="height: 100px;">
+                        <ul class="d-flex justify-content-center mg-20">
+                          <li class="float-l"><a href="#"><img src="img/MoMo_Logo 1.png" alt=""></a></li>
+                          <li class="float-l"><a href="#"><img src="img/amazonlogo.png" alt=""></a></li>
+                          <li class="float-l" style="padding-top: 10px;"><a href="#"><img src="img/Visa_Inc._logo 1.png" alt=""></a></li>
+                          <li class="float-l" style="padding-top: 10px;"><a href="#"><img src="img/1280px-PayPal_logo 1.png" alt=""></a></li>
+                        </ul>
+                      </div>
+                      </div>
+                      
+                      <ul class="d-flex justify-content-center">
+                        <a href="#"><button type="button" class="btn btn-warning mg-60"><a href="Giohang.html">Trở lại giỏ hàng</a></button></a>
+                      </ul>
+                   </div>
+                    
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-4" style="padding-left: 80px;">
+                      <img class="p-80" src="img/anhnho.png" alt="" style="width: 100%;">
+                    </div>
+                    <div class="col-md-8 p-80">
+                      <p class="f-14">Therealm of Skeleton Dance Lolita Dress Gothic Lolita JSK by Sweet Honey</p>
+                      <p class="f-12">Red/S</p>
+                      <p class="f-14">5.350.000 đ</p>
+                    </div>
+                  </div>
+                  <div id="giamgia" class="p-60">
+                    <div class="row">
+                    <form>
+                      <input type="text" id="fname" name="fname" value="Mã giảm giá">
+                      <a href="#"><button type="button" class="btn btn-warning" ><a href="#">Áp dụng</a></button></a>
+                    </form>
+                    </div>
+                    
+                  </div>
+                  <div id="chiphi">
+                    <div class="row">
+                      <ul>
+                        <li class="float-l"><p class="f-16 p-40 " style="margin-left: 60px;">Tổng tiền hàng</p></li>
+                        <li class="float-r"><p class="f-16 p-40 text-end ">5.350.000 đ</p></li>
+                      </ul>
+                      <ul>
+                        <li class="float-l"><p class="f-16 p-20" style="margin-left: 60px;">Phí vận chuyển</p></li>
+                        <li class="float-r"><p class="f-16 p-20 text-end">100.000 đ</p></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div id="tongtien">
+                  <div class="row" >
+                    <ul>
+                      <li class="float-l"><p class="f-16 p-60" style="margin-left: 60px;  ">Tổng thanh toán</p></li>
+                      <li class="float-r"><p class="f-16 p-60 text-end" >5.450.000 đ</p></li>
+                    </ul>
+                    <ul class="d-flex justify-content-center">
+                      <a href="#"><button type="button" class="btn btn-warning mg-40"><a href="#">Thanh toán</a></button></a>
+                    </ul>
+                  </div>
+                  </div>
+                  
+                 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+      <section id="TEXTLOGO" class="p-80" >
+      <div class="container">
+        <img class="mx-auto d-block" src="img/logo.png" alt="" style="margin-top: -25px; margin-bottom: 15px;">
+        <p class="h5 text-dark text-center">Welcome to my castle. I will make you a queen, and everyone shall make way for you.</p>
+        <p class="h5 text-center"><a href="SanPham.html">Click here to see latest products.</a></p>
+        </div>
+      </div>
+    </section>
+      <div class="container" style="margin-top: 50px">
+        <div class="row">
+          <div class="col-3">
+              <ul>
+                <li><p class="h5 text-white mg-20">DANH MỤC</p></li>
+                <li><p class="h6 text-white mg-20">Lolita Dresses</p></li>
+                <li><p class="h6 text-white mg-20">Lolita Blouses</p></li>
+                <li><p class="h6 text-white mg-20">Lolita Skirts</p></li>
+                <li><p class="h6 text-white mg-20">Lolita Petticoats</p></li>
+                <li><p class="h6 text-white mg-20">Lolita Bloomers</p></li>
+              </ul>
+          </div>
+          <div class="col-3">
+            <ul>
+              <li><p class="h5 text-white mg-20">PHONG CÁCH</p></li>
+              <li><p class="h6 text-white mg-20">Sweet Lolita</p></li>
+              <li><p class="h6 text-white mg-20">Classic Lolita</p></li>
+              <li><p class="h6 text-white mg-20">Gothic Lolita</p></li>
+              <li><p class="h6 text-white mg-20">Ouji Lolita</p></li>
+              <li><p class="h6 text-white mg-20">Hime Lolita</p></li>
+              <li><p class="h6 text-white mg-20">Qi Lolita</p></li>
+              <li><p class="h6 text-white mg-20">Wa Lolita</p></li>
+              <li><p class="h6 text-white mg-20">Punk Lolita</p></li>
+            </ul>
+        </div>
+        <div class="col-3">
+          <ul>
+            <li><p class="h5 text-white mg-20">THƯƠNG HIỆU</p></li>
+            <li><p class="h6 text-white mg-20">Miss Point</p></li>
+            <li><p class="h6 text-white mg-20">Alice Girl</p></li>
+            <li><p class="h6 text-white mg-20">Honey Peach Lolita</p></li>
+            <li><p class="h6 text-white mg-20">Eieyomi</p></li>
+            <li><p class="h6 text-white mg-20">ManReally</p></li>
+            <li><img src="img/304990595_505754774747908_4403154390198493249_n.png" style="width: 200px;" alt=""></li>
+          </ul>
+          
+      </div>
+      <div class="col-3">
+       <p class="h5 text-white mg-20" > &nbsp;KẾT NỐI VỚI CHÚNG TÔI</p>
+       <ul style="margin-bottom: 110px; margin-top: -20px; margin-left: 10%;">
+          <li class="float-l mg-20 p-20"><a href=""><img src="img/facebook.png" alt=""></a></li>
+          <li class="float-l mg-20 p-20" style="padding-right: 8px;"><a href=""><img src="img/google.png" alt="" ></a></li>
+          <li class="float-l mg-20 p-20"><a href=""><img src="img/instagram.png" alt=""></a></li>
+        </ul>
+       
+       <div class="buttonFooter">
+        <input type="text" id="enter" placeholder="Email" style="border: 2px solid #D0B27A;">
+        <button id="clear" style="border-bottom-left-radius: 0; border-top-left-radius: 0; border: 2px solid #D0B27A; font-weight: normal;">Gửi</button>
+    </div>
+    </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script>
+      // Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    </script>
+</body>
+</html>

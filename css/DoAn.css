@@ -1,0 +1,822 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face{
+    font-family: fonttieude;
+    src: url("../font/SVN-Wylie\ Voigen.otf");
+    font-family: fontbody;
+    src: Noto Sans;
+}
+header{
+    background-image: url(../img/nen.jpg);
+    font-family: fonttieude;
+}
+.form-control {
+    border-radius: 0.3rem;
+    border: 1px solid; 
+}
+.dropdown-menu[data-bs-popper] {
+
+    top: 118%;
+    left: 0;
+    margin-top: 0.125rem;
+}
+header .btn-outline-dark{
+    border: none; 
+}
+header .btn-outline-dark:hover{
+    background-color: #D0B27A;
+}
+.carousel-caption{
+    right: 65%;
+    padding-bottom: 3.25rem;
+}
+.nav-b{
+    color: #000;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+li .nav-b:hover a{
+    color: #D0B27A;
+    transition: 0.3s;
+}
+li .nav-b:active a{
+    color: #D0B27A;
+}
+a:hover{
+    color: #D0B27A;
+    transition: 0.3s;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: white;
+    background-color: #D0B27A;
+}
+header ul li:active a{
+    color: #000;
+
+}
+.navbar-expand-sm .navbar-nav .nav-link{
+    padding-left: 1rem;
+}
+.navbar-expand-sm .navbar-nav .nav-link:hover{
+    color: #D0B27A;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header .dropdown-toggle::after{
+    content: none;
+}
+header .btn-check:active+.btn-outline-dark, .btn-check:checked+.btn-outline-dark, .btn-outline-dark.active, .btn-outline-dark.dropdown-toggle.show, .btn-outline-dark:active {
+    color: #fff;
+    background-color: #D0B27A;
+    border-color: #212529;
+    
+}
+.dropdown-menu{
+    border: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+.column#caption {
+    position: relative;
+}
+.column {
+    display: inline-block;
+    text-align: center;
+}
+.column#caption .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+.column#caption .text p {		
+    margin: 0;		
+    color: black;
+    height: 36px;
+    line-height: 34px;
+    width: 180px;
+    opacity:calc(80%);
+    background-color: #fff;
+    border: 3px solid white;
+    border-radius: 200px;
+
+}
+.column#caption:hover .text {
+opacity: 1;
+
+}
+#DANHMUC{
+    background: url(../img/nen.jpg);
+    padding-bottom: 6%;
+    font-family: fonttieude;
+    
+}
+#DANHMUC .btn-warning{
+    background: #D0B27A;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+
+}
+#DANHMUC .btn-warning:hover{
+    color: #fff;
+}
+#DANHMUC .btn-warning:hover a{
+    color: white;
+}
+#NOIBAT{
+    background: url(../img/spnb.jpg);
+    padding-top: 6%;
+    padding-bottom: 6%;
+    font-family: fonttieude;
+    
+}
+#NOIBAT p{
+    color: #D0B27A;
+}
+#NOIBAT .btn-warning{
+    background: #D0B27A;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+}
+#NOIBAT .btn-warning:hover a{
+    color: #fff;
+}
+#SANPHAMMOI{
+    background: url(../img/nen.jpg);
+    padding-bottom: 6%;
+    font-family: fonttieude;
+}
+#SANPHAMMOI .btn-warning{
+  
+    background: #D0B27A;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    
+}
+#SANPHAMMOI p{
+    width: 310px;
+    margin: auto;
+}
+#SANPHAMMOI p.f-20{
+    margin-top: 8px;
+}
+#SANPHAMMOI .btn-warning:hover a{
+    color: #fff;
+}
+#TEXTLOGO{
+    background-color: #E7D8BC;
+    height: 260px;
+}
+.float-l{
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.float-r{
+    float: right;
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.borde-l{
+    border-left: 1px solid white;
+    padding-left: 20px;
+}
+.borde-all{
+    border: 1px solid black;
+}
+ul{
+    padding-left: 0;
+}
+ul li{
+    list-style: none;
+}
+.card{
+    border: none;
+}
+.borde-r{
+    border: #000;
+    border-radius: 15px;
+}
+footer{
+    background: #392924;
+
+}
+footer a{
+    color:#2C4E7D;
+}
+footer a:hover{
+    color: rgb(160, 6, 70);
+ } 
+ .buttonFooter input{
+    background-color: #392924;;
+}
+ .buttonFooter input:focus{
+    background-color: white;
+    
+}
+.buttonIn {
+    width: 300px;
+    position: relative;
+}
+ 
+#enter {
+    margin: 0px;
+    width: 70%;
+    padding: 4px 9px;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: none;
+}
+ 
+#clear {
+    margin-left: -10px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border:1px solid #000;
+    color:#fff;
+    background-color: #D0B27A;
+    border-radius: 5px;
+}
+.mg-20{
+    margin-top: 20px;
+    
+}
+.mg-24{
+    margin-top: 24px;
+}
+.mg-30{
+    margin-top: 30px;
+}
+.mg-40{
+    margin-top: 40px;
+}
+.mg-60{
+    margin-top: 60px;
+}
+.mg-80{
+    margin-top: 80px;
+}
+
+.p-20{
+    padding-top: 20px;
+}
+.p-40{
+    padding-top: 40px;
+}
+.p-60{
+    padding-top: 60px;
+}
+.p-80{
+    padding-top: 80px;
+}
+
+.f-12{
+    font-size: 12px;
+    font-weight: 700;
+    font-family: sans-serif;
+
+}
+
+.f-14{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: sans-serif;
+
+}
+.f-16{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: sans-serif;
+
+}
+.f-18{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: sans-serif;
+
+}
+.f-20{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: sans-serif;
+
+}
+.f-24{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: sans-serif;
+
+}
+/*css sanpham*/
+#info{
+    background: url(../img/nen.jpg);
+}
+#info ul li a{
+    color: #000;
+}
+#info ul li:hover a{
+    color: #D0B27A;
+}
+#viewas{
+    background-image: url(../img/nen.jpg);
+}
+#viewas p{
+line-height: 36px;
+}
+#viewas ul li:hover{
+    background-color: #D0B27A;
+    width: auto;
+    height: auto;
+}
+#viewas ul li:hover a{
+    color: white;
+    background-color: #D0B27A;
+    width: auto;
+    height: auto;
+}
+#viewas ul li:active a{
+    color: #000;
+    background-color: #D0B27A;
+}
+#viewas .btn-outline-dark:hover{
+    background-color: #D0B27A;
+    color: #fff;
+}
+#viewas .btn-outline-dark{
+    border-radius: none;
+}
+#viewas ul li:hover{
+    color: #D0B27A;
+}
+
+#viewas ul li:active{
+    color: #000;
+    background-color: #D0B27A;
+    width: auto;
+    height: auto;
+}
+#viewas .btn-outline-dark:hover{
+    background-color: #D0B27A;
+    color: #fff;
+}
+
+#sanpham{
+    background: url(../img/nen.jpg);
+    padding-bottom: 6%;
+}
+
+#sanpham p{
+    width: 300px;
+    margin: auto;
+}
+#sanpham p.h5{
+    margin-top: 8px;
+}
+#sanpham .btn-primary{
+   background-color: #E7D8BC;
+   width: 36px;
+   height: 36px;
+   border: none ;
+}
+#sanpham .btn-primary:active{
+    color: #fff;
+    background-color: #D0B27A;
+}
+/*css sanpham4*/
+#sanpham4{
+    background: url(../img/nen.jpg);
+    padding-bottom: 6%;
+}
+#sanpham4 .btn-primary{
+    background-color: #E7D8BC;
+    width: 36px;
+    height: 36px;
+    border: none ;
+ }
+ #sanpham4 p{
+    width: 278px;
+    margin: auto;
+}
+#sanpham4 p.h5{
+    margin-top: 8px;
+}
+/*css pk*/
+#pk{
+    background: url(../img/nen.jpg);
+    padding-bottom: 6%;
+}
+#pk p.h5{
+    margin-top: 8px;
+}
+#pk p{
+    width: 310px;
+    margin: auto;
+}
+#pk .btn-primary{
+    background-color: #E7D8BC;
+    width: 36px;
+    height: 36px;
+    border: none ;
+ }
+ /*css pk2*/
+ #pk2{
+    background: url(../img/nen.jpg);
+    padding-bottom: 6%;
+}
+#pk2 p.h5{
+    margin-top: 8px;
+}
+#pk2 p{
+    width: 310px;
+    margin: auto;
+}
+#pk2 .btn-primary{
+    background-color: #E7D8BC;
+    width: 36px;
+    height: 36px;
+    border: none ;
+ }
+/*css pk4*/
+#pk4{
+    background: url(../img/nen.jpg);
+    padding-bottom: 6%;
+}
+#pk4 p.h5{
+    margin-top: 8px;
+}
+#pk4 p{
+    width: 270px;
+    margin: auto;
+}
+#pk4 .btn-primary{
+    background-color: #E7D8BC;
+    width: 36px;
+    height: 36px;
+    border: none ;
+ }
+ /*css chitietsp*/
+ div .overflow{
+    width: 700px;
+    height: 650px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.color-selection {
+    margin-top: 1rem;
+    margin-left: 5px;
+    display: flex;
+    column-gap: 0.8rem;
+    box-sizing: border-box;
+    /* background-color: wheat; */
+    align-items: center;
+}
+.color-pick-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 0.8rem;
+}
+.color-selection .color-1 {
+    background-color:red;
+    width: 34px;
+    height: 34px;
+    border-radius: 200px;
+}
+.color-selection .color-2 {
+    background-color:blue;
+    width: 34px;
+    height: 34px;
+    border-radius: 200px;
+}
+.color-selection .color-3 {
+    background-color:yellow;
+    width: 34px;
+    height: 34px;
+    border-radius: 200px;
+}
+
+.co-r{
+    background-color: #B04141;
+    width: 32px;
+    height: 32px;
+    border-radius: 200px;
+}
+.co-b{
+    background-color: #2C4E7D;
+    width: 32px;
+    height: 32px;
+    border-radius: 200px;
+}
+.co-y{
+    background-color: #DFCF43;
+    width: 32px;
+    height: 32px;
+    border-radius: 200px;
+}
+.co-w{
+    background-color: whitesmoke;
+    width: 32px;
+    height: 32px;
+    border-radius: 200px;
+    border: 0.5px solid black;
+}
+.co-be{
+    background-color: #FBDEA9;
+    width: 32px;
+    height: 32px;
+    border-radius: 200px;
+}
+#ctsp{
+    background-image: url(../img/nen.jpg);
+}
+#ctsp ul.size li{
+    background-color: #4F413C;
+    width: 36px;
+    height: 36px;
+    border-radius: 200px;
+}
+#ctsp ul.size li:hover a{
+    color: #fff;
+}
+#ctsp ul.size li:hover{
+    background-color: #D0B27A;
+}
+#ctsp ul.size li p{
+    line-height: 36px;
+}
+#ctsp ul.sl li{
+    border: 1px solid black;
+}
+#ctsp ul li{
+    border: 1px solid black;
+}
+#ctsp ul.size li.float-l{
+    margin-left: 5px;
+
+}
+#ctsp ul.color li.float-l{
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+#ctsp .color1:checked ~ .object{
+    --selected:var(--greeny);
+  }
+#ctsp .color2:checked ~ .object{
+    --selected:var(--yellowish);
+  }
+#ctsp  .color3:checked ~ .object{
+    --selected:var(--redish);
+  }
+  #ctsp .color{
+    width:35px;
+    cursor:pointer;
+    margin:0px 40px 80px -10px;
+    opacity:0.4;
+  }
+  #ctsp .color::before{
+    display:inline-block;
+    position:relative;
+    content:"";
+    width:40px;
+    height:40px;
+    background: red;
+    border-radius:40px;
+    padding:2px;
+    z-index:2;
+  }
+  #ctsp .color2::before{
+    background: yellow;
+  }
+  #ctsp .color3::before{
+    background: blue;
+  }
+  #ctsp .color:checked{
+    opacity:1;
+  }
+  #ctsp .color:checked:before{
+    border:2px solid black;
+   
+  }
+#DEXUAT p{
+    width: 295px;
+}
+#ctsp .sl li.float-l{
+    margin:0;
+}
+#ctsp .btn-outline-warning{
+    height: 52px;
+    border-radius: 200px;
+}
+#ctsp .btn-outline-warning:hover {
+    color: white;
+    background-color: #D0B27A;
+    border-color: #D0B27A;
+}
+#ctsp .btn-outline-warning:hover a{
+    color: #fff;
+}  
+#DEXUAT{
+    background-image: url(../img/nen.jpg);
+    padding-bottom: 6%;
+}
+#DEXUAT .btn-warning{
+  
+    background: #D0B27A;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 60px;
+    
+}
+#DEXUAT .btn-warning:hover a{
+    color: #fff;
+}
+/* css giohang*/
+.bg-r{
+    background-color: #4F413C;
+    width: 34px;
+    height: 34px;
+    border-radius: 200px;
+}
+#giohang{
+    background: url(../img/nen.jpg);
+    padding-bottom: 6%;
+}
+#giohang ul li a{
+    color: #D0B27A;
+}
+#giohang p{
+    line-height: 32px;
+}
+#giohang p.float-l{
+    margin-left: 40px;
+}
+#giohang ul li.float-l{
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+#giohang ul.bu li.float-l{
+    margin: 0;
+}
+#giohang ul.bu li a{
+    color: #000;
+}
+#giohang textarea {
+    width: 100%;
+    height: 80px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 14px;
+    resize: none;
+  }
+  #giohang .btn-outline-warning{
+    background-color: #D0B27A;
+    border-radius: 200px;
+  }
+  #giohang .btn-outline-warning:hover a{
+    color: white;
+    transition: 0.3s;
+  }
+  #giohang .col-5{}
+  /*css thanhtoan*/
+  #thanhtoan{
+    background: url(../img/nen.jpg);
+    padding-bottom: 6%;
+  }
+  #thanhtoan .btn-primary{
+    border-radius: 200px;
+    height: 38px;
+    background-color: gray;
+    border: none;
+  }
+  #thanhtoan .borde-all{
+    border: 1px solid #D0B27A;
+  }
+  #phuongthucthanhtoan .btn-outline-secondary:hover a{
+    color: #fff;
+  }
+  #phuongthucthanhtoan .btn-outline-secondary:hover{
+    background-color: #D0B27A;
+  }
+  #giamgia input[type=text] {
+    width: 57%;
+    padding: 12px 20px;
+    margin-left: 68px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+  
+  #giamgia input[type=text]:focus {
+    border: 3px solid #555;
+  }
+  #giamgia .btn-warning{
+    height: 54px;
+    width: 156px;
+    margin-bottom: 8px;
+    margin-left: 40px;
+    background-color: #D0B27A;
+  }
+  #giamgia .btn-warning:hover a{
+    color: #f8f8f8;
+    transition: 0.3s;
+  }
+  #phuongthucthanhtoan .btn-warning{
+    background: #D0B27A;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 60px;
+  }
+  #phuongthucthanhtoan .btn-warning:hover a{
+    color: #f8f8f8;
+    transition: 0.3s;
+  }
+  #tongtien .btn-warning{
+    background: #D0B27A;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 60px;
+  }
+  #tongtien .btn-warning:hover a{
+    color: #fff;
+    transition: 0.3s;
+  }
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #D0B27A;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+ #thanhtoan div .modal-body {
+    border-radius: 5px;
+    padding: 20px;
+  }
+.modal-footer .btn-danger{
+    background: #D0B27A;
+    width: 160px;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+  }
+  .modal-footer .btn-danger:hover a{
+    color: #fff;
+    transition: 0.3s;
+  }
+  

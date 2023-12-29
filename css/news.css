@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    background: url("./img/z3850733744730_10d5706a3afa4fc0196ccc03d17328b0.jpg" );
+}
+
+li {
+    list-style: none;
+}
+
+
+
+#slider .w-100{
+    display: block;
+    width: 100%;
+}
+
+#slider .position-absolute{
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1b0d08cc;
+}
+
+
+#slider .position-absolute img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 30%;
+
+}
+
+.vector {
+    width: 24px;
+    height: 24px;
+    margin: 0 20px;
+}
+
+.news {
+    border: 1px solid #D0B27A;
+    padding: 0;
+}
+
+.title {
+    background-color: #D0B27A;
+    padding: 16px;
+    font-weight: 700;
+}
+
+.box p {
+    border-bottom: 1px solid #000;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.text-bottom {
+    bottom: 8%;
+    position: absolute;
+    text-align: initial;
+    display: block;
+    margin: 0 auto;
+    padding: 0 7%;
+}
+
+.text-bottom h5 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.text-bottom p {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: justify;
+}
+
+
+.col-6 {
+    padding-bottom: 13.5px;
+}
+
+.page-link {
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    margin: 15px;
+    background-color: #D0B27A;
+    border: none;
+    color:#000;
+}
+
+.page-link.active{
+    background-color: #D0B27A;
+    color:#000;
+    opacity: 1;
+}
+
+a.page-link .vector{
+    margin: 0;
+}
+
+.btn-xt{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px;
+border: none;
+width: 140px;
+height: 44px;
+
+/* color/Gold100 */
+
+background: #D0B27A;
+border-radius: 27px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.title-header{
+    width: 230px;
+height: 37px;
+
+font-family: 'Roboto Serif';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 37px;
+margin-bottom: 0;
+line-height: 44px;
+/* color/Black100 */
+color: #161616;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.page-item.position-absolute{
+    top: 50%;
+    width: auto;
+  transform: translate(0%, -50%); 
+}
+
+
+
+.page-item.position-absolute.left{
+    left: -40px;
+}
+
+.page-item.position-absolute.right{
+    right: -40px;
+}
+a.page-link.m-0{
+    border-radius: 50%;
+}
+
+h5.card-title{
+    width: 157px;
+height: 48px;
+width: 100%;
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 18px;
+font-weight: 600;
+/* or 114% */
+
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.card.mb-3 {
+    background: none;
+}
+
+.border-sidebar{
+    border-top: 1px solid rgba(0, 0, 0, 0.079);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.079);
+
+}
+
+.h1-fz36{
+    font-size: 36px;
+}
+
+hr{
+    opacity: 1;
+}
+.box.py-2.fw-semibold {
+    font-size: 16px;
+}
+
+p.fz-16{
+    font-size: 16px;
+}
+
+.ghi-chu{
+    border-left: 3px solid #D0B27A;
+    font-size: 1px;
+}
+
+
+ul.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
